@@ -6,428 +6,641 @@
  *
 */
 
+
+
 var Keyboard = {
     // Keys 
     A: {
-        getKeyCode: function() {
-            return 65;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 65) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 65) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 65) { func.call() }
+    		}, false);
+    	}
     },
     B: {
-        getKeyCode: function() {
-            return 66;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 66) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 66) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 66) { func.call() }
+    		}, false);
+    	}
     },
     C: {
-        getKeyCode: function() {
-            return 67;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 67) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 67) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 67) { func.call() }
+    		}, false);
+    	}
     },
     D: {
-        getKeyCode: function() {
-            return 68;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 68) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 68) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 68) { func.call() }
+    		}, false);
+    	}
     },
     E: {
-        getKeyCode: function() {
-            return 69;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 69) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 69) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 69) { func.call() }
+    		}, false);
+    	}
     },
     F: {
-        getKeyCode: function() {
-            return 70;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 70) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 70) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 70) { func.call() }
+    		}, false);
+    	}
     },
     G: {
-        getKeyCode: function() {
-            return 71;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 71) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 71) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 71) { func.call() }
+    		}, false);
+    	}
     },
     H: {
-        getKeyCode: function() {
-            return 72;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 72) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 72) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 72) { func.call() }
+    		}, false);
+    	}
     },
     I: {
-        getKeyCode: function() {
-            return 73;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 73) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 73) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 73) { func.call() }
+    		}, false);
+    	}
     },
     J: {
-        getKeyCode: function() {
-            return 74;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 74) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 74) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 74) { func.call() }
+    		}, false);
+    	}
     },
     K: {
-        getKeyCode: function() {
-            return 75;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 75) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 75) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 75) { func.call() }
+    		}, false);
+    	}
     },
     L: {
-        getKeyCode: function() {
-            return 76;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 76) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 76) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 76) { func.call() }
+    		}, false);
+    	}
     },
     M: {
-        getKeyCode: function() {
-            return 77;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 77) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 77) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 77) { func.call() }
+    		}, false);
+    	}
     },
     N: {
-        getKeyCode: function() {
-            return 78;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 78) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 78) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 78) { func.call() }
+    		}, false);
+    	}
     },
     O: {
-        getKeyCode: function() {
-            return 79;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 79) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 79) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 79) { func.call() }
+    		}, false);
+    	}
     },
     P: {
-        getKeyCode: function() {
-            return 80;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 80) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 80) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 80) { func.call() }
+    		}, false);
+    	}
     },
     Q: {
-        getKeyCode: function() {
-            return 81;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 81) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 81) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 81) { func.call() }
+    		}, false);
+    	}
     },
     R: {
-        getKeyCode: function() {
-            return 82;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 82) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 82) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 82) { func.call() }
+    		}, false);
+    	}
     },
     S: {
-        getKeyCode: function() {
-            return 83;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 83) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 83) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 83) { func.call() }
+    		}, false);
+    	}
     },
     T: {
-        getKeyCode: function() {
-            return 84;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 84) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 84) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 84) { func.call() }
+    		}, false);
+    	}
     },
     U: {
-        getKeyCode: function() {
-            return 85;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 85) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 85) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 85) { func.call() }
+    		}, false);
+    	}
     },
     V: {
-        getKeyCode: function() {
-            return 86;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 86) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 86) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 86) { func.call() }
+    		}, false);
+    	}
     },
     W: {
-        getKeyCode: function() {
-            return 87;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 87) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 87) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 87) { func.call() }
+    		}, false);
+    	}
     },
     X: {
-        getKeyCode: function() {
-            return 88;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 88) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 88) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 88) { func.call() }
+    		}, false);
+    	}
     },
     Y: {
-        getKeyCode: function() {
-            return 89;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 89) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 89) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 89) { func.call() }
+    		}, false);
+    	}
     },
     Z: {
-        getKeyCode: function() {
-            return 90;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false);
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
-    },
-    UP: {
-        getKeyCode: function() {
-            return 38;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);   
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false); 
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
-    },
-    DOWN: {
-        getKeyCode: function() {
-            return 40;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);   
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false); 
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+    	getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 90) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 90) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 90) { func.call() }
+    		}, false);
+    	}
     },
     LEFT: {
-        getKeyCode: function() {
-            return 37;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);   
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false); 
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+        getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 37) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 37) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 37) { func.call() }
+    		}, false);
+    	} 
     },
     RIGHT: {
-        getKeyCode: function() {
-            return 39;
-        },
-        down: function(func) {
-            document.addEventListener('keydown', func, false);   
-        },
-        up: function(func) {
-            document.addEventListener('keyup', func, false); 
-        },
-        press: function(func) {
-            document.addEventListener('keypress', func, false);
-        }
+        getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 39) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 39) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 39) { func.call() }
+    		}, false);
+    	}
     },
+    UP: {
+        getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 38) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 38) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 38) { func.call() }
+    		}, false);
+    	}
+    },
+    DOWN: {
+        getKeyCode: function(e) { return e.which; },
+    	getKeyChar: function(e) {
+    		return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode);
+    	},
+    	down: function(func) {
+    		document.addEventListener("keydown", function(e) {
+    			if(e.which == 40) { func.call() }
+    		}, false);
+    	},
+    	up: function(func) {
+    		document.addEventListener("keyup", function(e) {
+    			if(e.which == 40) { func.call() }
+    		}, false);
+    	},
+    	press: function(func) {
+    		document.addEventListener("keypress", function(e) {
+    			if(e.which == 40) { func.call() }
+    		}, false);
+    	}
+    },
+
     // General listeners
     down: function(func) {
         document.addEventListener("keydown", func, false);
@@ -444,4 +657,4 @@ var Keyboard = {
     getKeyChar: function(e) {
         return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode); 
     }
-};
+}; 
