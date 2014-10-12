@@ -1,7 +1,9 @@
 /*
+ *
  * keyboard.js
  *
  * Created by Gilbert Virgo
+ *
 */
 
 var Keyboard = {
@@ -412,7 +414,7 @@ var Keyboard = {
             document.addEventListener('keypress', func, false);
         }
     },
-  	RIGHT: {
+    RIGHT: {
         getKeyCode: function() {
             return 39
         },
