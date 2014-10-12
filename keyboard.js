@@ -412,7 +412,7 @@ var Keyboard = {
             document.addEventListener('keypress', func, false);
         }
     },
-    RIGHT {
+  	RIGHT: {
         getKeyCode: function() {
             return 39
         },
@@ -425,7 +425,7 @@ var Keyboard = {
         press: function(func) {
             document.addEventListener('keypress', func, false);
         }
-    }
+    },
     // General listeners
     down: function(func) {
         document.addEventListener("keydown", func, false);
@@ -442,4 +442,4 @@ var Keyboard = {
     getKeyChar: function(e) {
         return (e.which) ? String.fromCharCode(e.which) : String.fromCharCode(e.keyCode); 
     }
-}
+};
