@@ -10,7 +10,7 @@ var Keyboard = {
     // Keys 
     A: {
         getKeyCode: function() {
-            return 65
+            return 65;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -24,7 +24,7 @@ var Keyboard = {
     },
     B: {
         getKeyCode: function() {
-            return 66
+            return 66;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -38,7 +38,7 @@ var Keyboard = {
     },
     C: {
         getKeyCode: function() {
-            return 67
+            return 67;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -52,7 +52,7 @@ var Keyboard = {
     },
     D: {
         getKeyCode: function() {
-            return 68
+            return 68;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -66,7 +66,7 @@ var Keyboard = {
     },
     E: {
         getKeyCode: function() {
-            return 69
+            return 69;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -80,7 +80,7 @@ var Keyboard = {
     },
     F: {
         getKeyCode: function() {
-            return 70
+            return 70;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -94,7 +94,7 @@ var Keyboard = {
     },
     G: {
         getKeyCode: function() {
-            return 71
+            return 71;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -108,7 +108,7 @@ var Keyboard = {
     },
     H: {
         getKeyCode: function() {
-            return 72
+            return 72;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -122,7 +122,7 @@ var Keyboard = {
     },
     I: {
         getKeyCode: function() {
-            return 73
+            return 73;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -136,7 +136,7 @@ var Keyboard = {
     },
     J: {
         getKeyCode: function() {
-            return 74
+            return 74;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -150,7 +150,7 @@ var Keyboard = {
     },
     K: {
         getKeyCode: function() {
-            return 75
+            return 75;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -164,7 +164,7 @@ var Keyboard = {
     },
     L: {
         getKeyCode: function() {
-            return 76
+            return 76;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -178,7 +178,7 @@ var Keyboard = {
     },
     M: {
         getKeyCode: function() {
-            return 77
+            return 77;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -192,7 +192,7 @@ var Keyboard = {
     },
     N: {
         getKeyCode: function() {
-            return 78
+            return 78;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -206,7 +206,7 @@ var Keyboard = {
     },
     O: {
         getKeyCode: function() {
-            return 79
+            return 79;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -220,7 +220,7 @@ var Keyboard = {
     },
     P: {
         getKeyCode: function() {
-            return 80
+            return 80;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -234,7 +234,7 @@ var Keyboard = {
     },
     Q: {
         getKeyCode: function() {
-            return 81
+            return 81;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -248,7 +248,7 @@ var Keyboard = {
     },
     R: {
         getKeyCode: function() {
-            return 82
+            return 82;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -262,7 +262,7 @@ var Keyboard = {
     },
     S: {
         getKeyCode: function() {
-            return 83
+            return 83;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -276,7 +276,7 @@ var Keyboard = {
     },
     T: {
         getKeyCode: function() {
-            return 84
+            return 84;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -290,7 +290,7 @@ var Keyboard = {
     },
     U: {
         getKeyCode: function() {
-            return 85
+            return 85;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -304,7 +304,7 @@ var Keyboard = {
     },
     V: {
         getKeyCode: function() {
-            return 86
+            return 86;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -318,7 +318,7 @@ var Keyboard = {
     },
     W: {
         getKeyCode: function() {
-            return 87
+            return 87;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -332,7 +332,7 @@ var Keyboard = {
     },
     X: {
         getKeyCode: function() {
-            return 88
+            return 88;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -346,7 +346,7 @@ var Keyboard = {
     },
     Y: {
         getKeyCode: function() {
-            return 89
+            return 89;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -360,7 +360,7 @@ var Keyboard = {
     },
     Z: {
         getKeyCode: function() {
-            return 90
+            return 90;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);
@@ -374,7 +374,7 @@ var Keyboard = {
     },
     UP: {
         getKeyCode: function() {
-            return 38
+            return 38;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);   
@@ -388,7 +388,7 @@ var Keyboard = {
     },
     DOWN: {
         getKeyCode: function() {
-            return 40
+            return 40;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);   
@@ -402,7 +402,7 @@ var Keyboard = {
     },
     LEFT: {
         getKeyCode: function() {
-            return 37
+            return 37;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);   
@@ -416,7 +416,7 @@ var Keyboard = {
     },
     RIGHT: {
         getKeyCode: function() {
-            return 39
+            return 39;
         },
         down: function(func) {
             document.addEventListener('keydown', func, false);   
