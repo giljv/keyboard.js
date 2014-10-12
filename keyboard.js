@@ -370,6 +370,62 @@ var Keyboard = {
             document.addEventListener('keypress', func, false);
         }
     },
+    UP: {
+        getKeyCode: function() {
+            return 38
+        },
+        down: function(func) {
+            document.addEventListener('keydown', func, false);   
+        },
+        up: function(func) {
+            document.addEventListener('keyup', func, false); 
+        },
+        press: function(func) {
+            document.addEventListener('keypress', func, false);
+        }
+    },
+    DOWN: {
+        getKeyCode: function() {
+            return 40
+        },
+        down: function(func) {
+            document.addEventListener('keydown', func, false);   
+        },
+        up: function(func) {
+            document.addEventListener('keyup', func, false); 
+        },
+        press: function(func) {
+            document.addEventListener('keypress', func, false);
+        }
+    },
+    LEFT: {
+        getKeyCode: function() {
+            return 37
+        },
+        down: function(func) {
+            document.addEventListener('keydown', func, false);   
+        },
+        up: function(func) {
+            document.addEventListener('keyup', func, false); 
+        },
+        press: function(func) {
+            document.addEventListener('keypress', func, false);
+        }
+    },
+    RIGHT {
+        getKeyCode: function() {
+            return 39
+        },
+        down: function(func) {
+            document.addEventListener('keydown', func, false);   
+        },
+        up: function(func) {
+            document.addEventListener('keyup', func, false); 
+        },
+        press: function(func) {
+            document.addEventListener('keypress', func, false);
+        }
+    }
     // General listeners
     down: function(func) {
         document.addEventListener("keydown", func, false);
